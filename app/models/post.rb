@@ -8,6 +8,7 @@ class Post < ActiveRecord::Base
   def initialize(name, content)
     @name = name
     @content = content
+    @@all << self
   end
 
   def all
