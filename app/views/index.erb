@@ -4,7 +4,7 @@
     <title>Create Blog</title>
   </head>
   <body>
-    <% @posts.each do |post| %>
+    <%= @posts.each do |post| %>
       <h1><%= post.name %></h1>
       <p>
         <%= post.content %>
